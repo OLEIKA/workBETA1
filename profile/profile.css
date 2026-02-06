@@ -1,0 +1,12 @@
+@import url(../scss/_perehod.scss);
+.header_balance {
+  border: 0.8px solid rgb(142, 142, 142);
+  border-radius: 15px;
+  background: linear-gradient(270deg, rgb(38, 38, 38), rgb(84, 84, 84) 100%);
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}/*# sourceMappingURL=profile.css.map */

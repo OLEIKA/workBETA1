@@ -12,6 +12,7 @@
     />
   </head>
   <body>
+    <!-- шапка -->
     <header class="header">
       <div class="header_logo"></div>
       <div class="header_nav">
@@ -49,7 +50,11 @@
             </div>
           </div>
           <div class="header_profile_block_con2">
-            <a href="" class="header_profile_block_con2_prof">Мой профиль</a>
+            <a
+              href="../profile/profile.html"
+              class="header_profile_block_con2_prof"
+              >Мой профиль</a
+            >
             <a href="" class="header_profile_block_con2_offers">Мои офферы</a>
             <a href="" class="header_profile_block_con2_newoffer"
               >Новый оффер</a
@@ -67,6 +72,7 @@
       </div>
     </header>
 
+    <!-- контйнер номер 1 -->
     <div class="market_con1">
       <div class="market_con1_con">
         <div class="market_con1_blockcon">
@@ -115,9 +121,11 @@
         <div class="market_con1_con_butt">
           <button class="market_con1_con_butt_button">
             <span class="material-symbols-outlined">add_circle</span>
-            Создать оффер</button>
+            <a href="../create/create.html"> Создать оффер</a>
+          </button>
         </div>
       </div>
+
       <div class="market_con1_con2">
         <div class="sort1">
           <h1 class="market_con1_con2_h1">Сортировка</h1>
@@ -144,8 +152,196 @@
               <div class="sort_items" data-value="sell">Продаю</div>
               <div class="sort_items" data-value="buy">Ищу</div>
               <div class="sort_items" data-value="all">Все типы</div>
+            </div>
           </details>
         </div>
+      </div>
+    </div>
+
+    <!-- контейнер номер 2 -->
+    <div class="market_con2">
+      <div class="market_con2_h1">
+        <h1 class="market_con2_h1_offer">Офферы:</h1>
+        <h1 class="market_con2_h1_offer">0</h1>
+      </div>
+      <div class="market_con2_h1">
+        <h1 class="market_con2_h1_myoffer">Мои офферы:</h1>
+        <h1 class="market_con2_h1_myoffer">0</h1>
+      </div>
+      <div class="market_con2_h1">
+        <h1 class="market_con2_h1_cneterprice">Средняя цена:</h1>
+        <h1 class="market_con2_h1_cneterprice">0.0 руб</h1>
+      </div>
+    </div>
+
+    <!-- маркет офферы -->
+    <div class="market_grid">
+      <!--
+        Подсказка (не обязательно): можно задать данные оффера в data-атрибутах.
+        Тогда поиск/категории/сортировка будут работать по ним.
+
+        Пример:
+        <div class="market_offer"
+             data-title="Сведение трека"
+             data-desc="Описание..."
+             data-category="mix"   (beats|mix|covers|other)
+             data-type="sell"      (sell|buy)
+             data-price="2500">   (только число)
+      -->
+      <div class="market_offer">
+        <div class="offer_top">
+          <div class="offer_top_con">
+            <div class="offer_top_znak">Продаю</div>
+            <div class="offer_top_category">Сведение</div>
+            <div class="offer_top_price">500р</div>
+          </div>
+          <div class="offer_top_con2"></div>
+        </div>
+        <div class="offer_center">
+          <h1 class="offer_center_h1">Продаю сведение не дорого</h1>
+          <p class="offer_center_p">В стиле елиплага и всякого мусора</p>
+        </div>
+        <div class="offer_bot">
+          <div class="market_offer_profile">
+            <div class="market_offer_profile_ava"></div>
+            <div class="name_flex">
+              <div class="market_offer_profile_name">никнейм</div>
+              <div class="market_offer_profile_otziv">5.0</div>
+            </div>
+          </div>
+          <div class="market_offer_like like_js">
+            <span class="material-symbols-outlined like_js_ico">
+              favorite
+            </span>
+            0
+          </div>
+        </div>
+      </div>
+      <div class="market_offer">
+        <div class="offer_top">
+          <div class="offer_top_con">
+            <div class="offer_top_znak_buy">Покупаю</div>
+            <div class="offer_top_category">Обложка</div>
+            <div class="offer_top_price">300р</div>
+          </div>
+          <div class="offer_top_con2"></div>
+        </div>
+        <div class="offer_center">
+          <h1 class="offer_center_h1">Куплю любую обложку</h1>
+          <p class="offer_center_p">Дайте мне рукастого дизайнера пожалуйста</p>
+        </div>
+        <div class="offer_bot">
+          <div class="market_offer_profile">
+            <div class="market_offer_profile_ava"></div>
+            <div class="name_flex">
+              <div class="market_offer_profile_name">никнейм</div>
+              <div class="market_offer_profile_otziv">5.0</div>
+            </div>
+          </div>
+          <div class="market_offer_like like_js">
+            <span class="material-symbols-outlined like_js_ico">
+              favorite
+            </span>
+            0
+          </div>
+        </div>
+      </div>
+      <div class="market_offer">
+        <div class="offer_top">
+          <div class="offer_top_con">
+            <div class="offer_top_znak">Продаю</div>
+            <div class="offer_top_category">Другое</div>
+            <div class="offer_top_price">5000р</div>
+          </div>
+          <div class="offer_top_con2"></div>
+        </div>
+        <div class="offer_center">
+          <h1 class="offer_center_h1">Продаю технику</h1>
+          <p class="offer_center_p">
+            Пацаны продвайте всю оборудку, она не нужна
+          </p>
+        </div>
+        <div class="offer_bot">
+          <div class="market_offer_profile">
+            <div class="market_offer_profile_ava"></div>
+            <div class="name_flex">
+              <div class="market_offer_profile_name">никнейм</div>
+              <div class="market_offer_profile_otziv">5.0</div>
+            </div>
+          </div>
+          <div class="market_offer_like like_js">
+            <span class="material-symbols-outlined like_js_ico">
+              favorite
+            </span>
+            0
+          </div>
+        </div>
+      </div>
+      <div class="market_offer">
+        <div class="offer_top">
+          <div class="offer_top_con">
+            <div class="offer_top_znak_buy">Покупаю</div>
+            <div class="offer_top_category">Бит</div>
+            <div class="offer_top_price">1200р</div>
+          </div>
+          <div class="offer_top_con2"></div>
+        </div>
+        <div class="offer_center">
+          <h1 class="offer_center_h1">Покупаю биты, очень срочно нужен бит</h1>
+          <p class="offer_center_p">
+            Отпишите мне в тг пожалуйста у кого есть класные биточки
+          </p>
+        </div>
+        <div class="offer_bot">
+          <div class="market_offer_profile">
+            <div class="market_offer_profile_ava"></div>
+            <div class="name_flex">
+              <div class="market_offer_profile_name">никнейм</div>
+              <div class="market_offer_profile_otziv">5.0</div>
+            </div>
+          </div>
+          <div class="market_offer_like like_js">
+            <span class="material-symbols-outlined like_js_ico">
+              favorite
+            </span>
+            0
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- модальное окно оффера -->
+    <div class="modal_offer_con">
+      <div class="modal_offer">
+        <div class="modal_offer_top">
+          <div class="modal_offer_top_znak">Продаю</div>
+          <div class="modal_offer_top_category">Сведение</div>
+          <div class="modal_offer_top_price">500р</div>
+        </div>
+        <div class="modal_offer_h1">Cведение сделаю быстро 🎶</div>
+        <div class="modal_offer_p">
+          <p>Не дорого!! пацанчики жду, пишите...</p>
+        </div>
+        <div class="modal_offer_profile">
+          <div class="modal_offer_profile_ava"></div>
+          <div class="modal_offer_profile_con1">
+            <div class="modal_offer_profile_con1_name">никнейм</div>
+            <div class="modal_offer_profile_con1_con2">
+              <div class="modal_offer_profile_otziv">5.0</div>
+              <div class="modal_offer_profile_id">10000</div>
+            </div>
+          </div>
+        </div>
+        <div class="modal_offer_con_image">
+          <div class="modal_offer_img_p">Прикрепленные файлы</div>
+          <div class="modal_offer_img">
+            <div class="modal_offer_img_image"></div>
+          </div>
+        </div>
+        <div class="modal_offer_audio">
+          <audio src="../img/не верь (by шура).mp3" controls></audio>
+        </div>
+        <div class="modal_offer__button">Написать в telegram</div>
       </div>
     </div>
 
